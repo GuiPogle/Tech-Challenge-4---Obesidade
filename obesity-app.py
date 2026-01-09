@@ -210,7 +210,7 @@ with st.form("form_anamnese"):
     calc = st.slider("Consumo de álcool", 0, 4)
     mtrans = st.selectbox(
         "Meio de transporte",
-        ["Automobile", "Motorbike", "Public_Transportation", "Walking", "Bike"]
+        ["Automovel", "Motocicleta", "Transporte_Publico", "Caminhada", "Bicicleta"]
     )
 
     submitted = st.form_submit_button("Calcular Predição")
@@ -307,4 +307,5 @@ if not st.session_state.df_registros.empty:
         else:
             st.warning("Nenhum registro selecionado.")
 else:
+
     st.info("Nenhum paciente registrado até o momento.")
